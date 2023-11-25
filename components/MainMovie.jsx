@@ -3,7 +3,7 @@ import React from 'react'
 import batman from "../assets/batman.jpeg"
 const MainMovie = () => {
   return (
-    <div className='h-[50vh] relative'>
+    <div className='h-[60vh] relative'>
     <div className="relative w-full h-full">
       <Image src={batman} alt="movie" fill className='object-cover object-top z-[-1]' />
       <div className="absolute inset-0 bg-black opacity-70 z-10"></div>

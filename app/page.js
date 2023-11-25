@@ -1,5 +1,6 @@
 
 
+import MainMovie from '@/components/MainMovie';
 import MovieCard from '@/components/MovieCard';
 import React from 'react'
 
@@ -38,6 +39,10 @@ const Home = async ({searchParams}) => {
   console.log(searchParams.genre);
 
   return (
+   <>
+    {
+      searchParams.genre ? null : <MainMovie/>
+    }
     <div className='container  flex flex-col gap-[5rem] bg-zinc-200 py-[4rem] mx-auto '>
       <h2 className='text-4xl text-center underline underline-offset-8 tracking-widest  font-semibold text-yellow-600 '>{searchParams?.genre?.toUpperCase().replace(/_/g, ' ')}</h2>
       <div className='flex justify-center  gap-[2.5rem]  flex-wrap'>
@@ -50,6 +55,7 @@ const Home = async ({searchParams}) => {
       }
       </div>
     </div>
+   </>
   )
 }
 
