@@ -24,12 +24,12 @@ const MovieDetails = async ({params}) => {
 
   return (
     <>
-    <div className=' container flex flex-col items-center gap-[5rem]  bg-zinc-200 py-[4rem] mx-auto relative min-h-screen  '>
+    <div className=' container flex flex-col items-center gap-[5rem]  bg-zinc-200 py-[4rem]  mx-auto relative min-h-screen  '>
         <Image src={`https://image.tmdb.org/t/p/original/${data.poster_path}`} alt="poster" fill className='bg-image object-cover object-center '/>
-        <div className={`absolute rounded-xl  h-2/4  p-[2rem] flex items-center flex-col justify-center  gap-[3rem] ${styles.glass}`}>
-           <h2 className='text-4xl font-bold text-white'>{data.title.toUpperCase()}</h2>
+        <div className={`absolute rounded-xl  h-2/4 max-[600px]:h-3/4  p-[2rem] flex items-center flex-col justify-center  gap-[3rem] ${styles.glass}`}>
+           <h2 className=' text-4xl max-[600px]:text-2xl text-center font-bold text-white'>{data.title.toUpperCase()}</h2>
            <span className='text-yellow-200  text-md'>{data.vote_average} / {data.original_language.toUpperCase()} / {data.release_date}</span>
-           <p className='text-1xl font-light  w-3/4 text-white  text-justify'>{data.overview}</p>
+           <p className='text-1xl font-light  w-3/4 max-[600px]:w-[100%] text-white  text-justify'>{data.overview}</p>
            
            <ul className='flex flex-col text-sm '>
                 <li className='text-white '><span className='text-yellow-200 '>Official Site :</span> <Link href={data.homepage}>{data.homepage}</Link></li>
