@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/header'
 import Tabs from '@/components/Tabs'
+import MainMovie from '@/components/MainMovie'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className}`}>
           <Header/>
+          <MainMovie/>
           <Tabs/>
         {children}
       </body>
