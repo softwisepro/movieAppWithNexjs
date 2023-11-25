@@ -1,0 +1,8 @@
+
+
+.glass{
+    background: linear-gradient(135DEG, rgba(84, 77, 77, 0.6), rgba(39, 31, 31, 0));
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+
+}
