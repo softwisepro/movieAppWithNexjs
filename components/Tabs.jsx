@@ -29,7 +29,7 @@ console.log(genre);
     <div className='p-5 bg-gray-100 flex items-center justify-center gap-5 text-lg text-transform: uppercase text-gray-500'>
       {
         tabs.map((tab,i)=>(
-            <Link href={`/?genre=${tab.url}`} key={i} className={`cursor-pointer hover:text-black transition-colors ${tab.url === genre ? "underline underline-offset-8 text-yellow-600 font-bold" : ""}`}>{tab.name}</Link>
+            <Link href={`/?genre=${tab.url}`} key={i} className={`max-[600px]:text-[.9rem] cursor-pointer hover:text-black transition-colors ${tab.url === genre ? "underline underline-offset-8 text-yellow-600 font-bold" : ""}`}>{tab.name}</Link>
         ))
       }
     </div>
