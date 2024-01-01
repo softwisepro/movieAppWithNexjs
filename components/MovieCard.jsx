@@ -11,7 +11,7 @@ const MovieCard = ({movie}) => {
 
 
   return (
-   
+  
     <div onClick={()=>router.push(`/movie-detail/${movie.id}`)} className='flex flex-col items-center gap-5 w-[300px] h-[100%] bg-zinc-100  pb-4  rounded-[20px] overflow-hidden hover:scale-110 transition-all cursor-pointer ' >
       <div className='w-[300px] h-[400px] relative'>
       <Image src={`https://image.tmdb.org/t/p/original/${movie.poster_path || movie.backdrop_path}`} alt="poster" fill />
