@@ -16,7 +16,6 @@ const Header = () => {
     }
   }
 
-
   return (
 
     <nav class="bg-gray-100">
